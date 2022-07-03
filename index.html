@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    /> -->
+
+    <title>
+      Quiz | Você consegue acertar qual é o filme pelo título em português de
+      Portugal?
+    </title>
+  </head>
+
+  <body>
+    <header class="title">
+      <h1>Quiz</h1>
+    </header>
+
+    <div class="result none-result">
+      <p>Você acertou <span>0%</span> do quiz!</p>
+    </div>
+
+    <div class="container">
+      <h2>
+        Você consegue acertar qual é o filme pelo título em português de
+        Portugal?
+      </h2>
+
+      <form id="quiz-form">
+        <div class="content">
+          <div class="question">
+            <p>1. "O Mal Disposto" é o nome dado para o filme:</p>
+            <div>
+              <label>
+                <input type="radio" name="inputQuestion1" value="A" checked />
+                Psicose
+              </label>
+            </div>
+            <div>
+              <label>
+                <input type="radio" name="inputQuestion1" value="B" />
+                Meu Malvado Favorito
+              </label>
+            </div>
+            <div>
+              <label>
+                <input type="radio" name="inputQuestion1" value="C" />
+                O Poderoso Chefão
+              </label>
+            </div>
+            <div>
+              <label>
+                <input type="radio" name="inputQuestion1" value="D" />
+                Invocação do Mal
+              </label>
+            </div>
+          </div>
+
+          <div class="question">
+            <p>2. "O Aviso" é o nome dado para o filme de terror:</p>
+            <div>
+              <label>
+                <input type="radio" name="inputQuestion2" value="A" checked />
+                O Chamado
+              </label>
+            </div>
+            <div>
+              <label>
+                <input type="radio" name="inputQuestion2" value="B" />
+                O Grito
+              </label>
+            </div>
+            <div>
+              <label>
+                <input type="radio" name="inputQuestion2" value="C" />
+                Uma Chamada Perdida
+              </label>
+            </div>
+            <div>
+              <label>
+                <input type="radio" name="inputQuestion2" value="D" />
+                Deixe-me entrar
+              </label>
+            </div>
+          </div>
+
+          <div class="question">
+            <p>
+              3. "Uma Família a Beira de um Ataque de Nervos" é o título de:
+            </p>
+            <div>
+              <label>
+                <input type="radio" name="inputQuestion3" value="A" checked />
+                Família do Bagulho
+              </label>
+            </div>
+            <div>
+              <label>
+                <input type="radio" name="inputQuestion3" value="B" />
+                A Grande Família
+              </label>
+            </div>
+            <div>
+              <label>
+                <input type="radio" name="inputQuestion3" value="C" />
+                Pequena Miss Sunshine
+              </label>
+            </div>
+            <div>
+              <label>
+                <input type="radio" name="inputQuestion3" value="D" />
+                A Família Addams
+              </label>
+            </div>
+          </div>
+
+          <div class="question">
+            <p>4. "O Rei dos Gazeteiros" é o famoso filme:</p>
+            <div>
+              <label>
+                <input type="radio" name="inputQuestion4" value="A" checked />
+                O Lobo de Wall Street
+              </label>
+            </div>
+            <div>
+              <label>
+                <input type="radio" name="inputQuestion4" value="B" />
+                Se beber, Não case
+              </label>
+            </div>
+            <div>
+              <label>
+                <input type="radio" name="inputQuestion4" value="C" />
+                Superbad - É Hoje
+              </label>
+            </div>
+            <div>
+              <label>
+                <input type="radio" name="inputQuestion4" value="D" />
+                Curtindo a Vida Adoidado
+              </label>
+            </div>
+          </div>
+          <div>
+            <button>Enviar</button>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
