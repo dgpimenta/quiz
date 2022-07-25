@@ -1,5 +1,6 @@
 const form = document.querySelector('#quiz-form')
 const divFinalResult = document.querySelector('.result')
+const checkedAnswers = document.querySelectorAll('.checked')
 
 const correctAnswers = ['B', 'A', 'C', 'D']
 
@@ -44,6 +45,12 @@ const animateFinalScore = () => {
   }, 10)
 }
 
+const showCorrectAnswer = () => {
+  checkedAnswers.forEach(checkedAnswer => {
+    checkedAnswer.classList.remove('no-checked')
+  })
+}
+
 form.addEventListener('submit', event => {
   event.preventDefault()
 
@@ -53,4 +60,5 @@ form.addEventListener('submit', event => {
   calculateUSerScore(userAnswers)
   showFinalScore()
   animateFinalScore()
+  showCorrectAnswer()
 })
